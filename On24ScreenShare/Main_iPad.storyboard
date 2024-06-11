@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-pG-Cjs">
+                                <rect key="frame" x="0.0" y="100" width="800" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen share is not running. Please launch screen share from an ON24 product." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-7B-5gD">
+                                <rect key="frame" x="60" y="579" width="700.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="19"/>
+                                <color key="textColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2h-py-haT" userLabel="Viewinner">
+                                <rect key="frame" x="160" y="440" width="500" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYq-gL-6we">
+                                        <rect key="frame" x="5" y="28" width="490" height="47"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">ON24 is sharing and recording your screen.
+</string>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                        <color key="textColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8Ab-Wf-js9">
+                                        <rect key="frame" x="208" y="110" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="3hE-Ql-ETZ"/>
+                                            <constraint firstAttribute="height" constant="80" id="9fT-uG-UZN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHJ-zo-Vnc" customClass="RPSystemBroadcastPickerView">
+                                        <rect key="frame" x="154.5" y="225" width="187" height="40"/>
+                                        <color key="backgroundColor" red="0.94509803921568625" green="0.41568627450980389" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.94509803921568625" green="0.41568627450980389" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="jyN-o6-1tT"/>
+                                            <constraint firstAttribute="width" constant="187" id="wEa-8l-egm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YHJ-zo-Vnc" firstAttribute="top" secondItem="8Ab-Wf-js9" secondAttribute="bottom" constant="35" id="5X7-X8-QXc"/>
+                                    <constraint firstAttribute="trailing" secondItem="mYq-gL-6we" secondAttribute="trailing" constant="5" id="CDL-ux-CCI"/>
+                                    <constraint firstItem="8Ab-Wf-js9" firstAttribute="top" secondItem="mYq-gL-6we" secondAttribute="bottom" constant="35" id="EGg-f2-dZI"/>
+                                    <constraint firstAttribute="width" constant="500" id="FTK-L6-ZkB"/>
+                                    <constraint firstItem="YHJ-zo-Vnc" firstAttribute="centerX" secondItem="8Ab-Wf-js9" secondAttribute="centerX" id="Kh6-Yn-gBB"/>
+                                    <constraint firstAttribute="height" constant="300" id="L2O-yw-1eb"/>
+                                    <constraint firstItem="YHJ-zo-Vnc" firstAttribute="leading" secondItem="Z2h-py-haT" secondAttribute="leading" constant="154.5" id="a2j-Nd-7em"/>
+                                    <constraint firstItem="mYq-gL-6we" firstAttribute="leading" secondItem="Z2h-py-haT" secondAttribute="leading" constant="5" id="wCT-9b-chH"/>
+                                    <constraint firstItem="8Ab-Wf-js9" firstAttribute="centerY" secondItem="Z2h-py-haT" secondAttribute="centerY" id="yhf-Hp-tkC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.14117647058823529" blue="0.14509803921568626" alpha="0.3664050459" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fOa-7B-5gD" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="1p3-mN-KTb"/>
+                            <constraint firstItem="Z2h-py-haT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7r6-ie-ba4"/>
+                            <constraint firstItem="Z2h-py-haT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Cuy-xe-Leu"/>
+                            <constraint firstItem="goZ-pG-Cjs" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="-20" id="TwI-GC-V6p"/>
+                            <constraint firstItem="goZ-pG-Cjs" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailingMargin" id="fPk-tc-8jU"/>
+                            <constraint firstItem="fOa-7B-5gD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="g85-Mz-JL8"/>
+                            <constraint firstItem="goZ-pG-Cjs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="76" id="nPI-ed-GTj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ViewScreenShare" destination="Z2h-py-haT" id="Pup-Rp-aTR"/>
+                        <outlet property="lblNoUrlMsg" destination="fOa-7B-5gD" id="qj4-KD-HlS"/>
+                        <outlet property="lblStatus" destination="goZ-pG-Cjs" id="Eer-GK-NXp"/>
+                        <outlet property="lblon24lbl" destination="mYq-gL-6we" id="vZy-j5-rXq"/>
+                        <outlet property="viewCenter" destination="YHJ-zo-Vnc" id="jwz-gA-RLL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.536585365853657" y="4.5762711864406782"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mobileIcon" width="141" height="221"/>
+    </resources>
+</document>

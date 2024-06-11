@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWU-fA-BSl">
+                                <rect key="frame" x="20" y="91" width="353" height="0.0"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen share is not running. Please launch screen share from an ON24 product." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8d-le-Kfr">
+                                <rect key="frame" x="25" y="406" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="17"/>
+                                <color key="textColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGg-JJ-EMw">
+                                <rect key="frame" x="21.666666666666657" y="306" width="350" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVU-eO-9M3">
+                                        <rect key="frame" x="10" y="10" width="340" height="70.666666666666671"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.094117647060000004" green="0.1058823529" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="pES-C7-idP"/>
+                                        </constraints>
+                                        <string key="text">ON24 is sharing and recording your screen.
+</string>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                        <color key="textColor" red="0.92549019607843142" green="0.92941176470588238" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Zh5-m7-lcw">
+                                        <rect key="frame" x="140" y="80" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="9vz-J1-zsQ"/>
+                                            <constraint firstAttribute="width" constant="80" id="KxS-kH-7Cr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bH3-lZ-HlR" customClass="RPSystemBroadcastPickerView">
+                                        <rect key="frame" x="86.333333333333314" y="195" width="187" height="40"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.41568627450000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="IW2-1R-w2y"/>
+                                            <constraint firstAttribute="width" constant="187" id="UWm-Uq-Aw5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="0VO-0Q-nGl"/>
+                                    <constraint firstAttribute="trailing" secondItem="jVU-eO-9M3" secondAttribute="trailing" id="BV1-a0-aUb"/>
+                                    <constraint firstItem="jVU-eO-9M3" firstAttribute="top" secondItem="EGg-JJ-EMw" secondAttribute="top" constant="10" id="EyL-xs-TUM"/>
+                                    <constraint firstItem="bH3-lZ-HlR" firstAttribute="centerX" secondItem="Zh5-m7-lcw" secondAttribute="centerX" id="Kyc-af-ZfP"/>
+                                    <constraint firstItem="Zh5-m7-lcw" firstAttribute="top" secondItem="EGg-JJ-EMw" secondAttribute="top" constant="80" id="X2A-C6-DoJ"/>
+                                    <constraint firstItem="bH3-lZ-HlR" firstAttribute="top" secondItem="Zh5-m7-lcw" secondAttribute="bottom" constant="35" id="q9p-j5-xAY"/>
+                                    <constraint firstAttribute="bottom" secondItem="bH3-lZ-HlR" secondAttribute="bottom" constant="5" id="rRH-tY-wSS"/>
+                                    <constraint firstItem="jVU-eO-9M3" firstAttribute="leading" secondItem="EGg-JJ-EMw" secondAttribute="leading" constant="10" id="uOn-5M-YMK"/>
+                                    <constraint firstItem="Zh5-m7-lcw" firstAttribute="centerX" secondItem="jVU-eO-9M3" secondAttribute="centerX" id="yHP-kh-615"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.10588235294117647" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="N8d-le-Kfr" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="8cl-BH-TVh"/>
+                            <constraint firstItem="rWU-fA-BSl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="CGS-Zb-feL"/>
+                            <constraint firstAttribute="trailing" secondItem="rWU-fA-BSl" secondAttribute="trailing" constant="20" id="OTY-aO-DnC"/>
+                            <constraint firstItem="rWU-fA-BSl" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="Slu-15-YMJ"/>
+                            <constraint firstItem="N8d-le-Kfr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="VRC-ye-IqR"/>
+                            <constraint firstItem="EGg-JJ-EMw" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="VRV-md-0sc"/>
+                            <constraint firstItem="N8d-le-Kfr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="huN-cT-n4s"/>
+                            <constraint firstItem="EGg-JJ-EMw" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="jE0-N2-7rz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="N8d-le-Kfr" secondAttribute="trailing" constant="25" id="sf2-mb-4Q7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ViewScreenShare" destination="EGg-JJ-EMw" id="7Bc-vi-z6p"/>
+                        <outlet property="lblNoUrlMsg" destination="N8d-le-Kfr" id="bcQ-71-PoE"/>
+                        <outlet property="lblStatus" destination="rWU-fA-BSl" id="EqV-X8-rh1"/>
+                        <outlet property="viewCenter" destination="bH3-lZ-HlR" id="onx-bR-d6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-29.770992366412212" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mobileIcon" width="141" height="221"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
