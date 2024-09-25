@@ -54,7 +54,8 @@ UIDeviceOrientation newOrientation;
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    
+    [super viewWillAppear:animated];  // Call to the superclass method
+
     if (@available(iOS 11.0, *)) {
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(capturedChange)

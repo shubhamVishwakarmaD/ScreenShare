@@ -547,8 +547,13 @@ static bool CheckError(OSStatus error, NSString* function) {
         
         // we need check this because some times we will receive category change
         // with the same device.
-        if([oldOutputDeviceName isEqualToString:currentOutputDeviceName] ||
-           currentOutputDeviceName == nil ||  oldOutputDeviceName == nil) {
+//        if([oldOutputDeviceName isEqualToString:currentOutputDeviceName] ||
+//           currentOutputDeviceName == nil ||  oldOutputDeviceName == nil) {
+//            return;
+//        }
+        if ((oldOutputDeviceName && [oldOutputDeviceName isEqualToString:currentOutputDeviceName]) ||
+            currentOutputDeviceName == nil ||
+            oldOutputDeviceName == nil) {
             return;
         }
         OT_AUDIO_DEBUG(@"routeChanged: old=%@ new=%@",

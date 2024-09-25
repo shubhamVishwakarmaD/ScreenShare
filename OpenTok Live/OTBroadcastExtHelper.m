@@ -316,11 +316,19 @@ receivedSignalType:(NSString*)type
 {
     NSLog(@"Received receivedSignalType %@  fromConnection %@ withString %@",type,connection.data,string);
     
+//    Boolean fromSelf = NO;
+//    if ([connection.connectionId isEqualToString:session.connection.connectionId]) {
+//        fromSelf = YES;
+//        NSLog(@"self signal");
+//    }
     Boolean fromSelf = NO;
     if ([connection.connectionId isEqualToString:session.connection.connectionId]) {
         fromSelf = YES;
         NSLog(@"self signal");
     }
+
+  
+    
     else if([type isEqualToString:@"cfs"])
     {
         NSString *jsonString = string;
@@ -360,6 +368,12 @@ receivedSignalType:(NSString*)type
             }
         }
     }
+    
+    // Use 'fromSelf' here
+    if (fromSelf) {
+        // Perform actions based on the value of 'fromSelf'
+        NSLog(@"Signal is from self");
+    }
 }
 #pragma mark -
 - (void) sendSignal
@@ -369,6 +383,8 @@ receivedSignalType:(NSString*)type
     //                    @"publish": @NO
     //                }
     //            };
+    NSString *presentationType = @"cfs.call.presentation"; // Could be nil in some cases
+
     NSDictionary *data = @{
         @"channel0": @"cfs",
         @"channel1": @"all",
@@ -381,7 +397,7 @@ receivedSignalType:(NSString*)type
         @"message": @"call.presentation.room.participant.video.publish",
         @"path": @[
             @{
-                @"type0": @"cfs.call.presentation",
+                @"type0": presentationType ?: [NSNull null] , // Use NSNull if presentationType is nil
                 @"type1": @""//f4148aa8-aa9b-4dae-820d-0a1a9c30a3e7
             }
         ]
