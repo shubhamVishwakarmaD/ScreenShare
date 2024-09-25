@@ -634,7 +634,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/opentok/vonage-client-sdk-video.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = versionRange;
+				maximumVersion = 3.0.0;
 				minimumVersion = 2.27.3;
 			};
 		};
